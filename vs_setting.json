@@ -1,8 +1,8 @@
 {
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": false,
-  "window.menuBarVisibility": "toggle",
-  "workbench.activityBar.visible": false,
+  "window.menuBarVisibility": "default",
+  "workbench.activityBar.visible": true,
   "workbench.sideBar.location": "left",
   "workbench.statusBar.visible": true,
   "workbench.colorCustomizations": {
@@ -14,14 +14,12 @@
     "activityBar.background": "#212121",
     // "titleBar.activeBackground": "#ff0000",
     "editor.lineHighlightBackground": "#1c1c1c",
-
-
-
     "statusBar.background": "#ad07adb0",
     "statusBar.foreground": "#fff",
     "statusBar.noFolderBackground": "#303030",
     "statusBar.debuggingBackground": "#ad5113c0",
-
+    //cursor
+    "editorCursor.foreground": "#ffffffad"
   },
   "editor.tokenColorCustomizations": {
     "[One Dark Theme]": {
@@ -99,20 +97,29 @@
       ]
     },
     "[One Monokai]": {
-        "textMateRules": [
-          {
-            "name": "Keyword",
-            "scope": [
-              "keyword",
-              "keyword.operator.logical",
-              "keyword.operator.constructor"
-            ],
-            "settings": {
-              "foreground": "#c062dd",
-              "fontStyle": ""
-            }
-          },
-        ]
+      "textMateRules": [
+        {
+          "name": "Keyword",
+          "scope": [
+            "keyword",
+            "keyword.operator.logical",
+            "keyword.operator.constructor"
+          ],
+          "settings": {
+            "foreground": "#c062dd",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "string.unquoted",
+          "settings": {
+            "foreground": "#cccccce5",
+            "fontStyle": ""
+          }
+        }
+      
+       
+      ]
     },
     "[Monokai Vibrant]": {
       "textMateRules": [
@@ -200,12 +207,10 @@
   "window.zoomLevel": 0,
   "editor.wordWrap": "on",
   "prettier.useTabs": true,
-  // "solidity.compileUsingRemoteVersion": "lates",
-  "terminal.explorerKind": "external",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-//   "solidity.compileUsingRemoteVersion": "0.6.0",
+  //   "solidity.compileUsingRemoteVersion": "0.6.0",
   "[csharp]": {
     "editor.defaultFormatter": "Leopotam.csharpfixformat"
   },
@@ -216,16 +221,18 @@
   "[solidity]": {
     "editor.defaultFormatter": "JuanBlanco.solidity"
   },
-"workbench.iconTheme": "material-icon-theme",
-"javascript.updateImportsOnFileMove.enabled": "always",
-"debug.console.fontSize": 12,
-
-//bracket
-"bracketPairColorizer.showHorizontalScopeLine": false,
-"bracketPairColorizer.showVerticalScopeLine": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "debug.console.fontSize": 12,
+  //bracket
+  "bracketPairColorizer.showHorizontalScopeLine": false,
+  "bracketPairColorizer.showVerticalScopeLine": false,
+  "editor.fontWeight": "100",
+  "files.autoSave": "onFocusChange",
+"editor.cursorSmoothCaretAnimation": true,
 "editor.tabSize": 2,
-"editor.fontWeight": "100",
-"workbench.colorTheme": "One Monokai",
+"terminal.explorerKind": "external",
+"editor.cursorBlinking": "phase",
 "editor.fontSize": 12,
-"files.autoSave": "onFocusChange"
+"workbench.colorTheme": "One Monokai"
 }
