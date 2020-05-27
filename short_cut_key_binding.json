@@ -1,0 +1,35 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+;",
+    "command": "extension.insertSemicolon",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "-extension.insertSemicolon",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+;",
+    "command": "extension.insertSemicolonWithNewLine",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "-extension.insertSemicolonWithNewLine",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "workbench.action.terminal.clear"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.focusPrevious"
+  }
+]
